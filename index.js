@@ -12,6 +12,15 @@ app.get('/', (req, res) => res.send(`
 </ul>
 `));
 
+app.get('/animals', (req, res) => res.send(`
+<h1>List of pets</h1>
+<p>Browse through the links below to find your new furry friend:</p>
+<ul>
+    <li>pet 42</li>
+    <li>Pet 24</li>
+    <li>Pet 3</li>
+</ul>
+`));
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
